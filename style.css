@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+*{
+    margin: 0;
+}
+
+header{
+    background-color: gold;
+    height: 204.70px;
+    position: fixed;
+    width: 100vw;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    
+}
+nav{
+    margin: 0 auto;
+    width: 65vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(252, 223, 59);
+    margin-top: 19.80px;
+  
+
+}
+
+.Naws{
+    font-size: 21.5px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-top: 14px;
+}
+
+.Naws:hover {
+    background-size: 100% 2px;
+    color: #FFFCB7;
+    font-size: 24.5px;
+}
+
+@media (width: 100px) {
+    nav {
+        width: 50px;
+    }
+  }
+
+ .work{
+    padding-top: 265px;
+    height: 350px;
+    background-color: whitesmoke;
+  }
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+  
+    text-align: center;
+}
+.opiss{
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.text_block{
+    margin: 0 auto;
+    width: 600px;
+}
+
+.hran{
+    height: 450px;
+    background-color: whitesmoke;
+}
+
+.hran_h{
+    padding-top: 24.9px;
+}
+
+footer{
+    height: 200px;
+    background-color: black;
+}
+
+.kontakt{
+    padding-top: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.main_calcul{
+    padding-top: 265px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+
+
+.chek{
+    
+color: goldenrod;
+}
+
+.calcul_block{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.vibor1{
+    margin-top: 7.5px;
+    width: 210px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif; 
+    background-color: whitesmoke;
+
+}
+
+.vibor2{
+    margin-top: 7.5px;
+    width: 452px;
+    height: 40px;
+    font-size: 32px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif; 
+    background-color: whitesmoke;
+
+}
+
+.vibor2::placeholder{
+    margin-top: 7.5px;
+    
+    height: 40px;
+    font-size: 29px;
+    border-radius: 6px;
+
+    font-family: 'Oswald', sans-serif; 
+
+}
+
+.vibor3{
+  
+    margin-top: 7.5px;
+    width: 459px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: whitesmoke; 
+    
+}
+
+
+.vibor3:hover{
+
+    margin-top: 6px;
+    width: 452px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: whitesmoke; 
+}
+
+.change_position{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(252, 223, 59);
+    height: 31px;
+    color: whitesmoke;
+    border-radius: 100px;
+    outline: none;
+    width: 30px;
+
+}
+
+.change_position :hover{
+    background-color: rgb(252, 223, 59);
+    height: 40px;
+    color: whitesmoke;
+    border-radius: 8px;
+
+}
+
+#result{
+    font-size: 25.2px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+  
+    text-align: center;
+}
+
+.info{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.info_block{
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 450px;
+}
+.image{
+    width: 48px;
+    padding-top: 20px;
+}
+.vals_block{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.val_block {
+    text-align: center;
+}

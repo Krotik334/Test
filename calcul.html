@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Калькулятор</h1>
+        <nav>
+
+            <a href="index.html" class="Naws">Главная</a>
+            <a href="" class="Naws">Калькулятор</a>
+            <a href="" class="Naws">Информация</a>
+            <a href="" class="Naws">Контакты</a>
+
+        </nav>
+    </header>
+    <div class="main_calcul" id="main">
+        <h2 class='calcul_h'>Считаю твои деняфки :)</h2>
+        <div class="calcul_block">
+            <div class="select_values_block">
+                <select class="vibor1" onchange="alert(this.value)">
+                    <option>Биткоин</option>
+                    <option>Эфириум</option>
+                    <option>Монеро</option>
+                </select>
+                <button class="change_position"></button>
+                <select class="vibor1" onchange="alert(this.value)">
+                    <option>Рубли</option>
+                    <option>Доллары</option>
+                </select>
+            </div>
+
+            
+            <input type="number" id='input' placeholder="Сумма" class="vibor2"> <span id="result"></span>
+            
+            <button class='vibor3'>Посчитать</button>
+
+        </div>
+            <div class="info_block">
+                
+                <p class="info">Курсы валют</p>
+                
+                
+               <div class="vals_block">
+                <div class="val_block">
+                    
+                    <img class="image" src="https://myfin.by/images/cryptoCurrency/btc.png" alt="Bitecoin image">
+                    <p class="course_bitecoin">3869795.34391546 Рублей</p>
+                </div>
+
+               <div class="val_block">
+                <img class="image" src="https://myfin.by/images/cryptoCurrency/eth.png" alt="ETH image">
+                <p class="course_ETH">141780.88183422 Рублей</p>
+            </div>
+               <div class="val_block">
+                <img class="image" src="https://myfin.by/images/cryptoCurrency/xmr.png" alt="Monero image">
+                <p class="course_Monero">19742.86984127 Рублей</p>
+            </div>
+               </div>
+            </div>
+
+    </div>
+    
+    </div>
+    <footer id='Footer'>
+        <div class="kontakt">
+            Контакты
+        </div>
+
+        <script>
+                
+            input.oninput = function () {
+           /*      if(input.value.length > 6){
+                    console.log(input.value);
+                } */
+                
+                // console.log(input.value.length);
+                let cors = 3534626
+                let count = input.value
+                
+                let roubl = count / cors
+                console.log(typeof(roubl))
+
+                if (roubl === NaN){
+                    
+                    let errors =  `Введи нормальное число, это не так сложно`
+                    result.innerHTML = errors;
+                }else{
+                    let itog =  `В биткоинах это: ${roubl}`
+                    result.innerHTML = itog;
+
+                };
+                
+                
+            };
+        </script>
+</body>
+
+
+</html>
