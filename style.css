@@ -7,44 +7,19 @@
 
 header{
     background-color: gold;
-    height: 204.70px;
+    height: 170px;
     position: fixed;
-    width: 100vw;
+    min-width: 100vw;
 }
 h1{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 27px;
     font-family: 'Oswald', sans-serif;
     font-size: 70px;
     font-weight: 700;
     
 }
-nav{
-    margin: 0 auto;
-    width: 65vw;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    background: rgb(252, 223, 59);
-    margin-top: 19.80px;
-  
 
-}
-
-.Naws{
-    font-size: 21.5px;
-    font-weight: 500;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    color: black;
-    margin-top: 14px;
-}
-
-.Naws:hover {
-    background-size: 100% 2px;
-    color: #FFFCB7;
-    font-size: 24.5px;
-}
 
 @media (width: 100px) {
     nav {
@@ -53,10 +28,14 @@ nav{
   }
 
  .work{
+    width: 100vw;
     padding-top: 265px;
     height: 350px;
     background-color: whitesmoke;
   }
+.hran{
+    width: 100vw;
+}
 h2{
     font-size: 30px;
     font-weight: 500;
@@ -71,15 +50,17 @@ h2{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
+    padding: 0 10px 0 10px;
 
 }
 
 .text_block{
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
 }
 
 .hran{
+    width: 100vw;
     height: 450px;
     background-color: whitesmoke;
 }
@@ -104,7 +85,7 @@ footer{
 
 .main_calcul{
     padding-top: 265px;
-    height: 600px;
+    height: 784.5px;
     background-color: whitesmoke;
 }
 
@@ -157,31 +138,7 @@ color: goldenrod;
 
 }
 
-.vibor3{
-  
-    margin-top: 7.5px;
-    width: 459px;
-    height: 40px;
-    font-size: 22px;
-    border-radius: 6px;
-    font-family: 'Oswald', sans-serif;
-    background-color: black;
-    color: whitesmoke; 
-    
-}
 
-
-.vibor3:hover{
-
-    margin-top: 6px;
-    width: 452px;
-    height: 40px;
-    font-size: 22px;
-    border-radius: 6px;
-    font-family: 'Oswald', sans-serif;
-    background-color: black;
-    color: whitesmoke; 
-}
 
 .change_position{
     padding-top: 10px;
@@ -232,9 +189,100 @@ color: goldenrod;
 }
 .vals_block{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
+    
 }
 .val_block {
     text-align: center;
+    
 }
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #616161;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+#print{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 25px;
+
+}
+.course_bitecoin, .course_ETH, .course_Monero{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 19.6px;}

@@ -11,35 +11,40 @@
 <body>
     <header>
         <h1>Калькулятор</h1>
-        <nav>
-
-            <a href="index.html" class="Naws">Главная</a>
-            <a href="" class="Naws">Калькулятор</a>
-            <a href="" class="Naws">Информация</a>
-            <a href="" class="Naws">Контакты</a>
-
-        </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="index.html">Главная</a></li>
+              <li><a class="menu__item" href="#main">Калькулятор</a></li>
+              <li><a class="menu__item" href="#Footer">Контакты</a></li>
+       
+            </ul>
+          </div>
     </header>
     <div class="main_calcul" id="main">
         <h2 class='calcul_h'>Считаю твои деняфки :)</h2>
         <div class="calcul_block">
             <div class="select_values_block">
-                <select class="vibor1" onchange="alert(this.value)">
+                <select class="vibor1" id = 'Cripto'>
                     <option>Биткоин</option>
                     <option>Эфириум</option>
                     <option>Монеро</option>
                 </select>
                 <button class="change_position"></button>
-                <select class="vibor1" onchange="alert(this.value)">
+                <select class="vibor1" id = 'Money'>
                     <option>Рубли</option>
                     <option>Доллары</option>
                 </select>
             </div>
 
             
-            <input type="number" id='input' placeholder="Сумма" class="vibor2"> <span id="result"></span>
+            <input type="number" id='value' placeholder="Валюта" class="vibor2">
+            <input type="number" id='cripto_value' placeholder="Криптовалюта" class="vibor2">
+            <span id = 'print'></span>
             
-            <button class='vibor3'>Посчитать</button>
 
         </div>
             <div class="info_block">
@@ -50,17 +55,17 @@
                <div class="vals_block">
                 <div class="val_block">
                     
-                    <img class="image" src="https://myfin.by/images/cryptoCurrency/btc.png" alt="Bitecoin image">
-                    <p class="course_bitecoin">3869795.34391546 Рублей</p>
+                    <img class="image"  src="https://myfin.by/images/cryptoCurrency/btc.png" alt="Bitecoin image">
+                    <p id = "BTC" class="course_bitecoin"></p>
                 </div>
 
                <div class="val_block">
                 <img class="image" src="https://myfin.by/images/cryptoCurrency/eth.png" alt="ETH image">
-                <p class="course_ETH">141780.88183422 Рублей</p>
+                <p id = "ETH" class="course_ETH"></p>
             </div>
                <div class="val_block">
                 <img class="image" src="https://myfin.by/images/cryptoCurrency/xmr.png" alt="Monero image">
-                <p class="course_Monero">19742.86984127 Рублей</p>
+                <p id = "XMR" class="course_Monero"></p>
             </div>
                </div>
             </div>
@@ -73,7 +78,7 @@
             Контакты
         </div>
 
-        <script>
+        <!-- <script>
                 
             input.oninput = function () {
            /*      if(input.value.length > 6){
@@ -98,8 +103,9 @@
                 };
                 
                 
-            };
-        </script>
+            }; 
+        </script> -->
+<script src="count.js"></script>
 </body>
 
 
